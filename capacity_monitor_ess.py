@@ -687,14 +687,14 @@ def check_emails_for_capacity_reports_delivery():
 def send_mail():
     files = [pdf_report_mail_attachment_name, csv_report_mail_attachment_name, txt_report_mail_attachment_name]
     mail_date = str(date.today().strftime('%Y-%m-%d'))
-    from_mail = "nas-storage@allianz.de"
+    from_mail = "mail@mail.com"
     subject = ("ESS Utilization csv, txt, pdf graph report for " + mail_date)
     mail_content = '''Hello,
     This is email with capacity reports.
     In this mail you can find attachments (CSV, TXT, PDF).
     The mail is sent using Python Automation.
     Thank You
-    Developer Artem Kyrylov IBM
+    Developer Artem Kyrylov
     '''
     for item in emails:
         to = ''.join(item)
